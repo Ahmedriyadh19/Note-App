@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/Login', function () {
-    return view('Login');
-})->name('Login');
-
-Route::get('/Registration', function () {
-    return view('Registration');
-})->name('Registration');
+Route::redirect('/', '/Login');
+Route::view('/Login', 'Login')->name('Login');
+Route::view('/Registration', 'Registration')->name('Registration');

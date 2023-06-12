@@ -19,20 +19,21 @@
         </h1>
     </header>
 
-    <form action="" method="post">
-        @csrf
-        <h3>Login</h3>
-        <input type="text" name="" id="" placeholder="Email">
-        <div class="password-input">
-            <input type="password" name="" id="passwordInput" placeholder="Password">
-            <input type="checkbox" id="showPassword">
-        </div>
+    <div class="container">
+        <form action="" method="post">
+            @csrf
+            <h3>Login</h3>
+            <input type="text" name="" id="" placeholder="Email">
+            <div class="password-input">
+                <input type="password" name="" id="passwordInput" placeholder="Password">
+                <input type="checkbox" id="showPassword">
+            </div>
 
-        <button type="submit">Login</button>
-        <a class="link-to" href="{{ route('Registration') }}">Don't have an account !</a>
+            <button type="submit">Login</button>
+            <a class="link-to" href="{{ route('Registration') }}">Don't have an account !</a>
 
-    </form>
-
+        </form>
+    </div>
     <footer class="footer-box">
         <p>&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
         <br>

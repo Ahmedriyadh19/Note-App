@@ -11,9 +11,10 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
 }
 
 .header-box {
@@ -36,8 +37,6 @@ form {
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 30%;
-    margin: 0 auto;
-    margin-top: 20px;
 }
 
 form input[type="text"],
@@ -95,8 +94,6 @@ form button[type="submit"] {
     display: block;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .social-icons a {
@@ -130,13 +127,13 @@ form h3 {
 }
 
 a:visited {
-    color: black; /* Color after the link has been visited */
+    color: black;
 }
 
 a:hover {
-    color: green; /* Color when the link is hovered */
+    color: green;
 }
 
 a:active {
-    color: green; /* Color when the link is clicked */
+    color: green;
 }

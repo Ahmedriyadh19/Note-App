@@ -18,19 +18,21 @@
             Welcome
         </h1>
     </header>
-
-    <form action="" method="post">
-        @csrf
-        <h3>Registration</h3>
-        <input type="text" name="" id="" placeholder="Name">
-        <input type="text" name="" id="" placeholder="Email">
-        <div class="password-input">
-            <input type="password" name="" id="passwordInput" placeholder="Password">
-            <input type="checkbox" id="showPassword">
-        </div>
-        <button type="submit">Register</button>
-        <a class="link-to" href="{{ route('Login') }}">Have an account!</a>
-    </form>
+    
+    <div class="container">
+        <form action="" method="post">
+            @csrf
+            <h3>Registration</h3>
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="Email">
+            <div class="password-input">
+                <input type="password" name="" id="passwordInput" placeholder="Password">
+                <input type="checkbox" id="showPassword">
+            </div>
+            <button type="submit">Register</button>
+            <a class="link-to" href="{{ route('Login') }}">Have an account!</a>
+        </form>
+    </div>
 
     <footer class="footer-box">
         <p>&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
