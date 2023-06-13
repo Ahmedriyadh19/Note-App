@@ -20,7 +20,7 @@
     </header>
 
     <div class="container">
-        <form action="" method="post">
+        <form action="Login_Form" method="post">
             @csrf
             <h3>Login</h3>
             <input type="text" name="" id="" placeholder="Email">

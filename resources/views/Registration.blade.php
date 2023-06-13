@@ -18,15 +18,15 @@
             Welcome
         </h1>
     </header>
-    
+
     <div class="container">
-        <form action="" method="post">
+        <form action="Registration_Form" method="post">
             @csrf
             <h3>Registration</h3>
-            <input type="text" name="" id="" placeholder="Name">
-            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="name" id="" placeholder="Name">
+            <input type="text" name="email" id="" placeholder="Email">
             <div class="password-input">
-                <input type="password" name="" id="passwordInput" placeholder="Password">
+                <input type="password" name="password" id="passwordInput" placeholder="Password">
                 <input type="checkbox" id="showPassword">
             </div>
             <button type="submit">Register</button>

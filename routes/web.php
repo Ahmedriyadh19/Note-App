@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::redirect('/', '/Login');
+
 Route::view('/Login', 'Login')->name('Login');
 Route::view('/Registration', 'Registration')->name('Registration');
+Route::view('/Home', 'Home')->name('Home');
+
+Route::post('/Registration_Form', [UserController::class, 'register']);
+Route::post('/Login_Form', [UserController::class, 'login']);
