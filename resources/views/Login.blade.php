@@ -20,17 +20,17 @@
     </header>
 
     <div class="container">
-        <form action="Login_Form" method="post">
+        <form action="Login-Form" method="post">
             @csrf
             <h3>Login</h3>
-            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="email" id="" placeholder="Email" required>
             <div class="password-input">
-                <input type="password" name="" id="passwordInput" placeholder="Password">
+                <input type="password" name="password" id="passwordInput" placeholder="Password" required>
                 <input type="checkbox" id="showPassword">
             </div>
 
             <button type="submit">Login</button>
-            <p class="link-to"> Don't have an account ! <a href="{{ route('Registration') }}"> Register here</a></p>
+            <p class="link-to"> Don't have an account ! <a href="{{ route('RegistrationView') }}"> Register here</a></p>
 
         </form>
     </div>

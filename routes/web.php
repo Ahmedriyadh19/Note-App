@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/Login');
+Route::redirect('/', '/Login-View');
 
-Route::view('/Login', 'Login')->name('Login');
-Route::view('/Registration', 'Registration')->name('Registration');
-Route::view('/Home', 'Home')->name('Home');
+Route::view('/Login-View', 'Login')->name('LoginView');
+Route::view('/Registration-View', 'Registration')->name('RegistrationView');
+Route::view('/Home', 'Home')->name('HomeView');
 
-Route::post('/Registration_Form', [UserController::class, 'register']);
-Route::post('/Login_Form', [UserController::class, 'login']);
+Route::post('/Registration-Form', [UserController::class, 'register'])->name('register-form');
+Route::post('/Login-Form', [UserController::class, 'login'])->name('login-form');
+Route::get('/Logout', [UserController::class, 'logout'])->name('logout-form');

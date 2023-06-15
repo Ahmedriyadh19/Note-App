@@ -14,14 +14,15 @@
     <div class="header-box">
         <h1 class="centered-title">Welcome home</h1>
         <button class="logout-button" type="submit">
-            <a href="{{ route('Login') }}">
+
+            <a href="{{ route('logout-form') }}">
                 <i class="fas fa-sign-out-alt logout-icon"></i>
             </a>
         </button>
 
     </div>
 
-     <footer class="footer-box">
+    <footer class="footer-box">
         <p>&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
         <br>
         <div class="social-icons">
