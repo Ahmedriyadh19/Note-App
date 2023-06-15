@@ -30,7 +30,7 @@
             </div>
 
             <button type="submit">Login</button>
-            <a class="link-to" href="{{ route('Registration') }}">Don't have an account !</a>
+            <p class="link-to"> Don't have an account ! <a href="{{ route('Registration') }}"> Register here</a></p>
 
         </form>
     </div>

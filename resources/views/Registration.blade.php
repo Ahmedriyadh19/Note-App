@@ -30,7 +30,7 @@
                 <input type="checkbox" id="showPassword">
             </div>
             <button type="submit">Register</button>
-            <a class="link-to" href="{{ route('Login') }}">Have an account!</a>
+            <p class="link-to">Have an account ! <a href="{{ route('Login') }}"> Login</a></p>
         </form>
     </div>
 
