@@ -11,16 +11,15 @@
 
 </head>
 
+<header class="header-box">
+    <h1 class="centered-title">
+        Welcome
+    </h1>
+</header>
+
 <body>
-
-    <header class="header-box">
-        <h1 class="centered-title">
-            Welcome
-        </h1>
-    </header>
-
     <div class="container">
-        <form action="Login-Form" method="post">
+        <form action="Login-Form" method="post" class="form-box">
             @csrf
             <h3>Login</h3>
             <input type="text" name="email" id="" placeholder="Email" required>
@@ -34,19 +33,19 @@
 
         </form>
     </div>
-    <footer class="footer-box">
-        <p>&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
-        <br>
-        <div class="social-icons">
-            <a href="https://github.com"><i class="fab fa-github"></i></a>
-            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
-        </div>
 
-    </footer>
 </body>
+
+<footer class="footer-box">
+    <div class="social-icons">
+        <a href="https://github.com"><i class="fab fa-github"></i></a>
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p style="margin: 0;">&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
+</footer>
 
 </html>

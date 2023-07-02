@@ -20,7 +20,7 @@
     </header>
 
     <div class="container">
-        <form action="Registration-Form" method="post">
+        <form action="Registration-Form" method="post" class="form-box">
             @csrf
             <h3>Registration</h3>
             <input type="text" name="name" id="" placeholder="Name" required>
@@ -35,8 +35,6 @@
     </div>
 
     <footer class="footer-box">
-        <p>&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
-        <br>
         <div class="social-icons">
             <a href="https://github.com"><i class="fab fa-github"></i></a>
             <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
@@ -45,7 +43,7 @@
             <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
             <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
         </div>
-
+        <p style="margin: 0;">&copy; 2023 Ahmed Riyadh. All rights reserved.</p>
     </footer>
 
 </body>

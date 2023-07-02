@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,5 @@ Route::view('/Home', 'Home')->name('HomeView');
 Route::post('/Registration-Form', [UserController::class, 'register'])->name('register-form');
 Route::post('/Login-Form', [UserController::class, 'login'])->name('login-form');
 Route::get('/Logout', [UserController::class, 'logout'])->name('logout-form');
+
+Route::post('/Create-Post', [PostController::class, 'createPost'])->name('create-post');
